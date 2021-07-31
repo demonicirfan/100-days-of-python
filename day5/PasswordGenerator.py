@@ -20,12 +20,12 @@ for letter in range (0, nr_letters):
     initial_password. append(random_letters_array)
     
 for number in range (0, nr_numbers):
-    l=random.randint(0,9)
+    l=random.randint(0,8)
     random_numbers_array=numbers[l]
     initial_password. append(random_numbers_array)
 
 for symbol in range (0, nr_symbols):
-    l=random.randint(0,9)
+    l=random.randint(0,8)
     random_symbols_array=symbols[l]
     initial_password. append(random_symbols_array)
     
@@ -33,9 +33,9 @@ pass_len=len(initial_password)
 
 # hard level
 final_password=[]
-for i in range(0, pass_len):
-    num =  random.randint(0, pass_len)
+for i in range(1, pass_len):
+    num =  random.randint(1, pass_len-1)
     x = initial_password[num]
     final_password.append(x)
-for i in range(0, pass_len):
-    print(final_password[i])
+for i in range(1, pass_len-1):
+    print(final_password[i], end="")
