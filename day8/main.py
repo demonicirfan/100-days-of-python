@@ -15,4 +15,4 @@ def greet_with(name, location):
     print(f"hello {name}")
     print(f"{name} lives in {location}")
 
-greet_with("jack", "london")
+greet_with(location="london",name="jack")
